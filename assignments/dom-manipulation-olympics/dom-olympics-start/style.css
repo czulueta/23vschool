@@ -1,0 +1,54 @@
+.header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+h1{
+    color:rgb(121, 92, 250);
+    text-align: center;
+    font-size: 40px;
+    text-decoration:underline;
+    text-underline-offset: 0.1rem;
+}
+#authorDiv {
+    text-align: center;
+    display: inline-block;
+    padding: 20px;
+    width: 100vw;
+}
+.myName {
+    text-align: center;
+    color:rgb(245, 233, 2);
+}
+
+.name {
+    color: peachpuff;
+}
+
+.messages {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    margin: 10px 0px;
+    padding: 20px;
+}
+
+#main {
+    margin: 30px;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.message {
+    padding: 5px;
+}
+
+.right {
+    align-self: flex-end;
+    background-color: lightblue;
+}
+
+.left {
+    align-self: flex-start;
+    background-color: burlywood;
+}
