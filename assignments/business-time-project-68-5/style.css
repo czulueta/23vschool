@@ -26,9 +26,13 @@ html, body {
    
 
 }
-#hero-background{
+.hero-background{
     grid-row:2/10;
     width:100vw;
+    height: 100vh;
+    background-image: url("assets/background.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
       
 }
 #menu{
@@ -64,3 +68,22 @@ html, body {
   display: block;
 }
 
+@media only screen and(max-width: 760px){
+    .hero-background{
+        grid-row:2/10;
+        width:100vw;
+        height: 100vh;
+        background-image: hidden;
+        background-repeat: no-repeat;
+        background-size: cover;
+         
+    }
+    .plus {
+        grid-row:2/10;
+        width:100vw;
+        height: 100vh;
+        background-image: url("assets/big-background.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}

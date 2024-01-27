@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css"/>
+    <title>Document</title>
+</head>
+<body>
+    <div class="cal-container">
+        <form class="calculator" name="calculator">
+            <input type="number" name="num1" required placeholder="enter a number" />
+            <input type="number" name="num2" required placeholder="enter a number" />
+            <select name="operator">
+                <option>Operator</option>
+                <option value="add">Add</option>
+                <option value="subtract">Subtract</option>
+                <option value="multiply">Multiply</option>
+                <option value="divide">Divide</option>
+            </select>
+            <button name="submit">Submit</button>
+            <div id="result" ></div>
+        </form>
+        
+
+    </div>
+    <script src="main.js"> </script>
+</body>
+</html>
