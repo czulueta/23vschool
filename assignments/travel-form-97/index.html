@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css"/>
+    <title>Document</title>
+</head>
+<body>
+    <div class="card-container">
+        <div class="title-container">
+            <h1>Hebrew Airlines</h1>
+            <h2>Passenger Card</h2>
+        </div>
+        
+        <form class="form-card-container" name="flightForm">
+            <h4>Passenger Information</h4>
+            <input type="text" name="firstName" placeholder="First Name"  />
+            <input type="text" name="lastName" placeholder="Last Name"  />
+            <input type="number" name="number" placeholder="Age"  />
+            <div class="gender-container">
+                <div class="male">
+                    Male: <input type="radio" name="gender" placeholder="Male" value="Male" />
+                </div>
+                <div class="'female">
+                    Female: <input type="radio" name="gender" placeholder="Female" value="Female" />
+                </div>
+                
+            </div>
+            
+            <h4>Destination</h4>
+            <select name="city">
+                <option>Select</option>
+                <option value="losAngeles">Los Angeles</option>
+                <option value="newYork">New York</option>
+                <option value="miami">Miami</option>
+            </select>
+            <h4>Dietary Restrictions</h4>
+            <div>
+                Vegetarian: <input type="checkbox" name="food" value="Vegetarian" />
+            </div>
+            <div>
+                Kosher: <input type="checkbox" name="food" value="Kosher" />
+            </div>
+            <div>
+                Lactose Free: <input type="checkbox" name="food" value="Lactose Free" />
+            </div>
+            <br/>
+            <button name="submit">Submit</button>
+        </form>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
