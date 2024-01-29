@@ -11,6 +11,7 @@ html, body {
     align-items: center;
     justify-content:center;
     flex-direction:column;
+    border-radius: 10px;
 }
 
 .title-container{
@@ -22,20 +23,28 @@ html, body {
     background-color:rgb(43, 39, 250);
     align-items: center;
     justify-items: center;
-    margin-top: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     h1{
         display:flex;
         justify-content:center;
         width:100vw;
         color: whitesmoke;
+        text-shadow: 2px 2px 4px #000000;
     }
     h2{
         display:flex;
         justify-content:center;
         width:100vw;
         margin-top:0px;
-        color: whitesmoke;
+        color: rgb(255, 255, 255);
+        text-shadow: 2px 2px 4px #000000;
     }
+}
+.title{
+    color:rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px #000000;
 }
 .form-card-container{
     width: 400px;
@@ -47,7 +56,18 @@ html, body {
     flex-basis: auto;
     flex-direction: column;
     flex-shrink:2;
-    margin-top:10px;
+    margin-top:20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+#city{
+    display: flex;
+    flex-direction: column;
+    margin-bottom:2px;
+    .city{
+        margin-bottom:2px;
+    }
     
 }
 .gender-container{
@@ -59,5 +79,15 @@ html, body {
     display: inline-block;
     h5{
         float:inline-start;
+    }
+}
+.names {
+    display:flex;
+    flex-direction: column;
+    width: 300px;
+    input{
+        width: 300px;
+        border-radius:5px;
+        margin:5px;
     }
 }

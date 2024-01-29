@@ -14,10 +14,12 @@
         </div>
         
         <form class="form-card-container" name="flightForm">
-            <h4>Passenger Information</h4>
-            <input type="text" name="firstName" placeholder="First Name"  />
-            <input type="text" name="lastName" placeholder="Last Name"  />
-            <input type="number" name="number" placeholder="Age"  />
+            <h4 class="title">Passenger Information</h4>
+            <div class="names">
+                <input type="text" name="firstName" placeholder="First Name"  />
+                <input type="text" name="lastName" placeholder="Last Name"  />
+                <input type="number" name="number" placeholder="Age"  />
+            </div>
             <div class="gender-container">
                 <div class="male">
                     Male: <input type="radio" name="gender" placeholder="Male" value="Male" />
@@ -28,14 +30,16 @@
                 
             </div>
             
-            <h4>Destination</h4>
-            <select name="city">
-                <option>Select</option>
-                <option value="losAngeles">Los Angeles</option>
-                <option value="newYork">New York</option>
-                <option value="miami">Miami</option>
-            </select>
-            <h4>Dietary Restrictions</h4>
+            <div id="city">
+                <h4 class=city"">Destination:</h4>
+                <select name="city">
+                    <option>Select</option>
+                    <option value="losAngeles">Los Angeles</option>
+                    <option value="newYork">New York</option>
+                    <option value="miami">Miami</option>
+                </select>
+            </div>
+            <h4 class="title">Dietary Restrictions</h4>
             <div>
                 Vegetarian: <input type="checkbox" name="food" value="Vegetarian" />
             </div>
