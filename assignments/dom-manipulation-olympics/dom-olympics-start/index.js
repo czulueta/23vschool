@@ -44,3 +44,21 @@ left[0].textContent = " HELP!!! HELP!!! I NEED HELP IMMEDIATELY!!";
 right[0].textContent = " This is the local Farm police how can i help sir? "
 left[1].textContent = " I have a cat burglar in my house ";
 right[1].textContent = " Sorry sir i think you have the wrong number this is the farm police we only deal with animals";
+
+const theme = document.getElementById("themeDropDown")
+theme.addEventListener("click", () => {
+  const themeOne = theme.themeOne.value
+  const themeTwo = theme.themeTwo.value
+  if(themeOne){
+    return document.getElementsByClassName("left").setAttribute("class","leftClass");
+  }else if(themeTwo){
+    return document.getElementsByClassName("right").setAttribute("class", "rightClass");
+  }
+  
+
+})
+// const change() = () => {
+
+// }
+// const theme1 = document.body.drop.themeOne.value;
+// const theme2 = document.body.drop.themeTwo.value;

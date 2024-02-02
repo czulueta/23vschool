@@ -52,3 +52,10 @@ h1{
     align-self: flex-start;
     background-color: burlywood;
 }
+.leftClass{
+    background-color:red;
+}
+.rightClass{
+    background-color:black;
+    color:white;
+}
