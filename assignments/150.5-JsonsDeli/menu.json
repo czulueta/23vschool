@@ -1,0 +1,79 @@
+{
+    "appetizers":[
+        {
+            "nachos":"nachos",
+            "ingredients":["tortilla chips", "cheese"],
+            "description":"tasty"
+        },
+        {
+            "cheese-sticks":"cheese sticks",
+            "ingredients":"fried mozzeralla cheese",
+            "description":"steamy hot cheesy sticks"
+        },
+        {
+            "onion-rings":"onion-rings",
+            "ingredients":["onion", "bread crumbs"],
+            "description":"deep fried in avacodo oil"
+        },
+        {
+            "soup":{
+                "vegan": {
+                    "name":"tortilla-soup",
+                    "ingredients":["tortilas thinly sliced","soy bean stew"],
+                    "description":"100% totally all vegan hot soup"
+                },
+                "meat-lovers":{
+                    "name":"beef stew",
+                    "ingredients":["chuck steak", "carrots","celery","potatoes"],
+                    "description":"hearty chunks of potatoes and chuck beef with carrots and seasonal vegetables"
+                }
+            }
+            
+        }
+    ],
+    "cold-sandwiches":[
+        {
+            "turkey-sandwhich":"turkey sandy",
+            "ingredients":["mayo","turkey","lettuce"],
+            "add-ons":{
+                "chicken":"chicken",
+                "turkey-bacon":"turkey bacon",
+                "hot-peppers":"jalepeno"
+            }
+        },
+        {
+            "fish-sandwhiches":{
+                "tuna":{
+                    "albacore":"atlantic albacore",
+                    "ingredients":["albacore tuna","mayo","seasonal veggies"],
+                    "description":"chicken of the sea protein packed sandy"
+                },
+                "sea bass":{
+                    "sea bass":"sea bass",
+                    "ingredients":["sea bass","grey poupon", "seasonal veggies"],
+                    "description":"high end tasty sub"
+                }
+            }
+            
+        },
+        {
+            "chicken-sandwhich":"chicken sub",
+            "ingredients":["mayo","chicken","romaine lettuce"],
+            "description":"delicious on the go bite"
+        }
+    ],
+    "hot-sandwhiches":[
+        {
+            "venison":"vension-sub",
+            "ingredients":["deer","secret sauce","spinach"],
+            "description":"fresh savory wild game tastiness"
+        },
+        {
+            "vegan":{
+                "beyond-meat sandwhich":"beyond meat sandwhich",
+                "indgredients":["vegertarian beet dip sauce","beyond burger meat","thinly sliced paprika potatoes"],
+                "description":"so close to meat but its not at all"
+            }
+        }
+    ]
+}

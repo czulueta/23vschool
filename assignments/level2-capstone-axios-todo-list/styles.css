@@ -1,0 +1,16 @@
+
+#todoContainer{
+    display:flex;
+    justify-content:center;
+    align-items: space-around;
+}
+#individualTodo{
+    width: 300px;
+    height: 300px;
+    margin: 20px 20px 20px 20px;
+    border: solid 1px red;
+}
+img{
+    width: 150px;
+    height: auto;
+}
