@@ -1,0 +1,14 @@
+
+
+.pet-container{
+    background-color:rgb(55, 118, 255);
+    border-radius: 5px;
+    width: 180px;
+    margin: 5px;
+    display: flex;
+    flex-direction: start;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 2px;
+    
+}
