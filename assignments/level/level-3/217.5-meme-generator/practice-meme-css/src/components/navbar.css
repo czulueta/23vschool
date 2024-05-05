@@ -1,0 +1,11 @@
+.nav-container{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 1240px;
+    height: 130px;
+    background:linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+    color: #ffffff;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0 100px 0 100px;
+}

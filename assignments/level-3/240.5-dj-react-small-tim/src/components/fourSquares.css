@@ -1,0 +1,27 @@
+.box{
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    margin: 5px;
+    
+
+}
+.four-squares-container{
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(2 1fr);
+    grid-template-rows:repeat(2 1fr);
+}
+
+/* div > :nth-child(3 of .box){
+    background-color: red;
+    
+}
+div > :nth-child(1 of .box){
+    background-color: yellow;
+    grid-area: 0/1;
+}
+div > :nth-child(2 of .box){
+    background-color: blue;
+    grid-area: 1/2;
+} */

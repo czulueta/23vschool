@@ -1,0 +1,31 @@
+.form-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 300px;
+    
+}
+
+input{
+    width: 450px;
+    height: 60px;
+    margin: 30px;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 1rem;
+}
+button{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    width: 1010px;
+    height: 60px;
+    margin: 30px;
+    border-radius: 8px;
+    padding: 10px;
+    color: white;
+    font-size: 2rem;
+    background:linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+}
