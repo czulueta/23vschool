@@ -1,0 +1,21 @@
+.form-container{
+    
+    width: auto;
+    height: 10rem;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.input-top{
+    width:15rem;
+    height:4rem;
+    margin-left: 5rem;
+    margin-top: 2rem;
+}
+.input-bottom{
+    width:15rem;
+    height:4rem;
+    margin-left:5rem;
+    margin-top:2rem;
+}

@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+}
+
+.header-app{
+    width: auto;
+    height: 120px;
+    background-image:linear-gradient(to right ,#672280,#A626D3);
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding-left: 6rem;
+    padding-right:6rem;
+}
+.app-container{
+    width: auto;
+    height: 100vh;
+    margin: 0, 40px, 0, 40px;
+}
+
+.header-title{
+    color: white;
+}
+.header-subtitle{
+    color: white;
+}
