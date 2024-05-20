@@ -1,0 +1,35 @@
+*{
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+
+    
+}
+#root{
+    width: auto;
+    height: 100vh;
+}
+
+.light-theme-{
+    background-color: #bababa;
+    color:black;
+
+}
+.light-theme-navbar{
+    background-color: rgb(212, 15, 15);
+    color:black;
+
+}
+
+.dark-theme-{
+    background-color:#222322;
+    color: white; 
+}
+.dark-theme-navbar{
+    background-color:#222322;
+    color: white; 
+}
+.dark-theme-hero{
+    background-color:#222322;
+    color: white; 
+}

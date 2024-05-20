@@ -1,0 +1,19 @@
+.navbar{
+    width: auto;
+    height: 500px;
+}
+
+.light-theme{
+    background-color: color #7fee92;
+    color:black;
+}
+.light-theme-navbar{
+    background-color: color #7fee92;
+    color:black;
+    height: 200px;
+}
+
+.dark-theme{
+    background-color:#282525;
+    color: white; 
+}
