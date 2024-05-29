@@ -1,28 +1,40 @@
+import {UglyContext} from "../uglyContext.jsx"
+import {useContext} from "react"
 
 
 export default function UglyForm(){
+
+  const {inputs, handleChange, handleSubmit} = useContext(UglyContext)
+
   return(
-    <div>
-      <form onSubmit="">
+    <div className="form-container">
+      <form className="form" onSubmit={handleSubmit}>
+        <h1>Ugly Form</h1>
         <input
-          name=""
-          value=""
-          onChange=""
-          placeholder=""
+          name="title"
+          value={inputs.title}
+          onChange={handleChange}
+          placeholder="Ugly Title"
          />
         <input
-          name=""
-          value=""
-          onChange=""
-          placeholder=""
+          name="imgUrl"
+          value={inputs.imgUrl}
+          onChange={handleChange}
+          placeholder="Ugly Image"
          />
         <input
-          name=""
-          value=""
-          onChange=""
-          placeholder=""
+          name="description"
+          value={inputs.description}
+          onChange={handleChange}
+          placeholder="Ugly Description"
+          className="description"
          />
-        <button>Submit</button>
+        <button 
+          className="formBtn"
+          type="submit"
+          value="submit"
+        >Submit</button>
+        
       </form>
     </div>
   )

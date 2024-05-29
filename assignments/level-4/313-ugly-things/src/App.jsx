@@ -1,5 +1,6 @@
 import UglyForm from "./components/UglyForm.jsx"
-import UglyCard from "./components/UglyCard.jsx"
+import UglyCarousel from "./components/UglyCarousel.jsx"
+import UglyList from "./components/UglyList.jsx"
 import './App.css'
 
 function App() {
@@ -8,7 +9,8 @@ function App() {
   return (
     <>
       <UglyForm />
-      <UglyCard />
+      <UglyCarousel />
+      <UglyList />
     </>
   )
 }

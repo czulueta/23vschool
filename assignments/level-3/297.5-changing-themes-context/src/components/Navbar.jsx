@@ -4,13 +4,14 @@ import {useContext} from "react"
 
 export default function Navbar(){
 
-  const {color,navbar, toggleNavbar} = useContext(ThemeContext)
+  const {color,navbar,toggle, toggleNavbar} = useContext(ThemeContext)
   
 
   return(
     <div  className={`${color}-theme-${navbar}`}>
       <h1>Navbar</h1>
-      <button onClick={toggleNavbar}>Theme</button>
+      <button onClick={toggleNavbar}>Theme navbar</button>
+      <button onClick={toggle}>Theme</button>
     </div>
   )
 }

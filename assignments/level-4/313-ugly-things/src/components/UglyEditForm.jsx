@@ -1,29 +1,46 @@
+import {useState} from "react"
 
 
+export default function UglyEditForm(props){
+  const [editedUgly, setEditedUgly] = useState({
+    ...props.ugly
+    
+  })
 
-export default function UglyEditForm(){
+  function handleEditChange(e){
+    const { name, value} = e.target
+    setEditedUgly(prev => ({
+      ...prev,
+      [name]: value
+    }))
+  }
+  function newHandleSave(e){
+    e.preventDefault()
+    props.handleSaveEdit(props.ugly._id, editedUgly)
+    props.toggleEdit()
+  }
   return (
-    <div>
-      <form onSubmit="">
+    <div className="uglyEdit-form-container">
+      <form className="uglyEdit-form" onSubmit={newHandleSave} >
         <input
-          name=""
-          value=""
-          onChange=""
-          placeholder=""
+          name="title"
+          value={editedUgly.title}
+          onChange={handleEditChange}
+          placeholder="New Title"
          />
         <input
-          name=""
-          value=""
-          onChange=""
-          placeholder=""
+          name="imgUrl"
+          value={editedUgly.imgUrl}
+          onChange={handleEditChange}
+          placeholder="New Image"
          />
         <input
-          name=""
-          value=""
-          onChange=""
-          placeholder=""
+          name="description"
+          value={editedUgly.description}
+          onChange={handleEditChange}
+          placeholder="New Description"
          />
-        <button>Submit</button>
+        <button className="saveEditBtn">Save Edit</button>
       </form>
     </div>
   )

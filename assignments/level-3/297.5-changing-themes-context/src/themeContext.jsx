@@ -4,7 +4,7 @@ const ThemeContext = React.createContext()
 
 function ThemeContextProvider(props){
   const [color, setColor] = useState("dark")
-  const [navbar, setNavbar] = useState(" ")
+  const [navbar, setNavbar] = useState("")
 
   function toggle(){ 
   setColor(prev => prev === "dark" ? "light" : "dark")

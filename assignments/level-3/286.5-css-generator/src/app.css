@@ -1,7 +1,7 @@
 textarea{
     background: linear-gradient(50deg, #FFFF00 , #000000); 
     -moz-background: linear-gradient(50deg, #FFFF00 , #000000); 
-    -webkit: linear-gradient(50deg, #FFFF00 , #000000)
+    -webkit: linear-gradient(50deg, #d6d7d8 , #000000)
     
     /*for 3 color inputs, you can simply add the 3rd color*/
     /* background: linear-gradient(50deg, #FFFF00 , #000000, #FF0000);  */
