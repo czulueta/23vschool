@@ -1,0 +1,23 @@
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
+}
+*{
+  margin: 0;
+}
+body {
+    background: #141414;
+    color: white;
+    width: 90%;
+    margin-inline: auto;
+}
+
+.heading{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 2rem;
+  padding-top: 1rem;
+}

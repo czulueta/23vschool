@@ -84,7 +84,7 @@ p{
   grid-row: span 5;
   box-shadow: 0 4px 8px 0 rgba(131, 243, 71, 0.2), 0 6px 20px 0 rgba(115, 235, 9, 0.19);
   /* background: linear-gradient(35deg, #d6d7d8, #929292); */
-  background: #f9f9f9;
+  background: #3e3e3e;
   background-color:rgb(23, 22, 22);
   color: #fafafa;
 }

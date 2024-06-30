@@ -1,0 +1,13 @@
+.movie-list-container{
+    /* display: flex;
+    flex-direction: row; */
+    /* border-style: solid;
+    border-color: white; */
+    /* overflow: hidden; */
+    /* height: 570px; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 1.25rem;
+    margin-top: 5rem;
+    justify-content: center;
+}

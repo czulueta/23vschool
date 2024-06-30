@@ -1,0 +1,18 @@
+.movie-container{
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: span 5;
+    border-radius: 6px;
+    padding: 2rem;
+    text-align: center;
+    justify-content: center;
+    
+    /* background: rgb(113,9,121);
+    background: linear-gradient(90deg, rgba(113,9,121,1) 0%, rgba(0,3,36,1) 0%, rgba(61,0,255,1) 35%); */
+}
+
+img{
+    
+    padding: 1.5rem;
+    margin: .5rem;
+}
