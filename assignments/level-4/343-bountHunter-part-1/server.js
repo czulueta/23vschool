@@ -3,8 +3,8 @@ const app = express()
 
 app.use(express.json())
 
-app.use("/bounties", require("./routes/bountyRouter.jsx"))
+app.use("/bounties", require("./routes/bountyRouter.js"))
 
-app.listen(8000, () => {
+app.listen(9000, () => {
   console.log("Your Server is running on Port 9000!!!")
 })

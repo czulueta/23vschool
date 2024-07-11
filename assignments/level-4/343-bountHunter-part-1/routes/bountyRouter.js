@@ -46,7 +46,7 @@ bountyRouter.route("/")
     const newBounty = req.body
     newBounty._id = uuidv4()
     bounties.push(newBounty)
-    res.send(`Successfully added ${newBounty.firstName} to the database!!!`)
+    res.send(newBounty)
   })
 
 bountyRouter.delete("/:bountyId", (req, res) => {
