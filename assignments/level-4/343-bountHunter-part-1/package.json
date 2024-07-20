@@ -1,9 +1,21 @@
 {
   "dependencies": {
+    "dotenv": "^16.4.5",
     "express": "^4.19.2",
+    "mongoose": "^8.5.1",
     "morgan": "^1.10.0",
     "nodemon": "^3.1.4",
     "uuid": "^10.0.0",
     "uuidv4": "^6.2.13"
-  }
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "343-bounthunter-part-1",
+  "version": "1.0.0",
+  "main": "server.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }

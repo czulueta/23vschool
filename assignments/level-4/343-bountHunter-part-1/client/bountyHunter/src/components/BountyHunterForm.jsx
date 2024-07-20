@@ -47,7 +47,7 @@ export default function BountyHunterForm(props){
           onChange={handleChange} 
           placeholder="Last Name" 
         />
-        <label htmlFor="living">Is this Bounty Dead?</label>
+        <label htmlFor="living">Is this Bounty Alive?</label>
         <input 
           type="boolean" 
           id="living" 
