@@ -1,0 +1,15 @@
+.home-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-container{
+  display: flex;
+  flex-direction: column;
+  margin: 0 32px;
+  border: 1px solid #333;
+  padding: 10px;
+  margin: 5px;
+
+}
