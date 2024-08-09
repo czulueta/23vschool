@@ -20,6 +20,7 @@ const connectDb = async() => {
 connectDb()
 
 app.use("/api/auth", require("./routes/authRouter.js"))
+app.use("/api/issues", require("./routes/issueRouter.js"))
 
 app.use((err, req, res, next) => {
   console.log(err)
