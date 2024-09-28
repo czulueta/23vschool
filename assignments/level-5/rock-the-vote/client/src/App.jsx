@@ -1,5 +1,6 @@
-import react, {useContext} from "react"
+import react, {useContext, useEffect} from "react"
 import {UserContext} from "./context/UserProvider.jsx"
+
 import Auth from "./components/Auth"
 import Profile from "./components/Profile"
 import Public from "./components/Public"
@@ -9,6 +10,9 @@ import { Routes, Route, Navigate } from "react-router-dom"
 export default function App() {
 
   const {token, logout} = useContext(UserContext)
+  
+
+  
 
   return (
     <>

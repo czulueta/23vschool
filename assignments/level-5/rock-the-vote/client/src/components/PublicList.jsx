@@ -1,11 +1,13 @@
 import { useContext } from "react"
-import { IssueContext } from "../context/IssueProvider"
+import { UserContext } from "../context/UserProvider"
 import Issue from "./Issue.jsx"
 
 
 export default function PublicList(){
 
-  const { allIssues } = useContext(IssueContext)
+  const { allIssues } = useContext(UserContext)
+
+  console.log("allIssues:", allIssues)
 
   const issuesList = allIssues.map(issue => {
     return (

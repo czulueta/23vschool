@@ -12,8 +12,8 @@ authRouter.post("/signup", async(req, res, next) => {
     }
     const newUser = new User(req.body)
     const savedUser = await newUser.save()
-    const token = jwt.sign(savedUser.toObject(), process.env.SECRET)
-    return res.status(201).send({user: savedUser, token})
+    const token = jwt.sign(savedUser.withoutPassword(), process.env.SECRET)
+    return res.status(201).send({user: savedUser.withoutPassword(), token})
   } catch (err) {
     res.status(500)
     return next(err)
@@ -22,17 +22,21 @@ authRouter.post("/signup", async(req, res, next) => {
 
 authRouter.post("/login", async(req, res, next) => {
   try {
+    console.log(req.body)
     const user = await User.findOne({username: req.body.username.toLowerCase()})
+    
     if(!user){
       res.status(403)
-      return next(new Error("Sorry The Username or Password is doesn't match our Data Base Collections"))
+      return next(new Error("The Username or Password is Incorrect Please try again"))
     }
-    if(req.body.password !== user.password){
+
+    const passwordCheck = await user.checkPassword(req.body.password)
+    if(!passwordCheck){
       res.status(403)
-      return next(new Error("Sorry The Username or Password is doesn't match our Data Base Collections"))
+      return next(new Error("The Username or Password is Incorrect Please try again"))
     }
-    const token = jwt.sign(user.toObject(), process.env.SECRET )
-    return res.status(201).send({user, token})
+    const token = jwt.sign(user.withoutPassword(), process.env.SECRET )
+    return res.status(201).send({user: user.withoutPassword(), token})
   } catch (err) {
     res.status(500)
     return next(err)

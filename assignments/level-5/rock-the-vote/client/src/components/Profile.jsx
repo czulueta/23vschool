@@ -5,12 +5,10 @@ import IssueForm from './IssueForm.jsx';
 
 function Profile() {
 
-    const { user, getUserIssues, issues } = useContext(UserContext)
+    const { user, issues} = useContext(UserContext)
 
-    useEffect(() => {
-        getUserIssues()
-    }, [])
-    console.log(issues)
+    
+    
     return ( 
         <>
             <h1>Username: {user.username} </h1>
